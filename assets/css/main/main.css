@@ -11,6 +11,11 @@ body {
   min-height: 100svh;
 }
 
+h1 {
+  margin: 60px;
+  text-align: center;
+}
+
 .flex {
   display: flex;
   justify-content: space-around;
