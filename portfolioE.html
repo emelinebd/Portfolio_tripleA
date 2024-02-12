@@ -2,76 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Emeline</title>
+  <link rel="stylesheet" href="../assets/css/main/main.min.css">
+  <link rel="stylesheet" href="../assets/css/mael/style.min.css">
 </head>
 <body>
-  <header>
-    <h1>Mon Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#a-propos">À propos</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="accueil" class="accueil">
-    <div class="container">
-      <h2>Bienvenue sur mon portfolio</h2>
-      <p>Brief introduction ou description.</p>
-    </div>
-  </section>
+<header>
+  <div class="title"><h1>Emeline</h1></div>
 
-  <section id="projets" class="projets">
-    <div class="container">
-      <h2>Mes Projets</h2>
-      <div class="projet">
-        <img src="projet1.jpg" alt="Projet 1">
-        <div class="overlay">
-          <h3>Nom du Projet 1</h3>
-          <p>Description du projet 1.</p>
-          <a href="#">Voir plus</a>
-        </div>
-      </div>
-      <div class="projet">
-        <img src="projet2.jpg" alt="Projet 2">
-        <div class="overlay">
-          <h3>Nom du Projet 2</h3>
-          <p>Description du projet 2.</p>
-          <a href="#">Voir plus</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <nav>
+    <ul>
+      <li><a href="#">Présentation</a></li>
+      <li><a href="#">Projets</a></li>
+      <li><a href="#">Éducation</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <section id="a-propos" class="a-propos">
-    <div class="container">
-      <h2>À propos de moi</h2>
-      <p>Brief description sur vous-même.</p>
-    </div>
-  </section>
+<section class="presentation">
+  <article>
+    <h2>Présentation</h2>
+    <p>Je suis une développeuse full-stack de 21 ans, résidant à Templeuve. Ma passion pour la programmation m'a conduit à explorer divers domaines du développement web et logiciel.</p>
+    <p>Je suis constamment en quête de nouvelles technologies et de défis stimulants pour affiner mes compétences et créer des applications exceptionnelles.</p>
+  </article>
+</section>
 
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contactez-moi</h2>
-      <form action="#" method="post">
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" required>
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
-    </div>
-  </section>
+<section class="projet">
+  <article>
+    <img src="../assets/img/projet.jpg">
+    <h3>Titre du projet</h3>
+    <p>Courte description du projet</p>
+    <a href="#">En savoir plus</a>
+  </article>
+</section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
-    </div>
-  </footer>
+
+<section class="education">
+  <article>
+    <h2>Éducation</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Formation</th>
+        <th>Ville</th>
+        <th>Date</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>MyDigitalSchool</td>
+        <td>Lille</td>
+        <td>2024-2025</td>
+      </tr>
+      </tbody>
+    </table>
+  </article>
+</section>
+
+<footer>
+  <div class="block">
+    <a href="#"><strong>Téléphone :</strong> +33657897645</a>
+    <a href="#"><strong>Adresse mail :</strong> contact@test.fr</a>
+  </div>
+
+  <p class="cop">&copy - 2024</p>
+</footer>
 </body>
 </html>
