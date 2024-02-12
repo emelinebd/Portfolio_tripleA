@@ -1,17 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-}
-
-body {
-  background-image: linear-gradient(to right top, #c8f3ff, #d4f2ff, #e0f1ff, #e9f1fd, #f0f2f9, #eff0f9, #efeef9, #efebf9, #ede3fc, #eddbfe, #eed2ff, #f1c9ff);
-  min-height: 100svh;
-}
-
-h1 {
+main h1 {
   margin: 60px;
   text-align: center;
 }
@@ -20,17 +8,14 @@ h1 {
   display: flex;
   justify-content: space-around;
 }
-
-a {
+.flex a {
   text-decoration: none;
 }
-
-a.custom-btn {
+.flex a.custom-btn {
   text-align: center;
   margin: auto;
 }
-
-.custom-btn {
+.flex .custom-btn {
   width: 240px;
   height: 48px;
   color: #fff;
@@ -46,82 +31,80 @@ a.custom-btn {
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
-
-.btn-6 {
+.flex .btn-6 {
   background: rgb(247, 150, 192);
   background: radial-gradient(circle, rgb(247, 150, 192) 0%, rgb(118, 174, 241) 100%);
   line-height: 42px;
   padding: 0;
   border: none;
 }
-.btn-6 span {
+.flex .btn-6 span {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
 }
-.btn-6 span:before, .btn-6 span:after {
+.flex .btn-6 span:before, .flex .btn-6 span:after {
   position: absolute;
   content: "";
   height: 0%;
   width: 1px;
   box-shadow: -1px -1px 20px 0px rgb(255, 255, 255), -4px -4px 5px 0px rgb(255, 255, 255), 7px 7px 20px 0px rgba(0, 0, 0, 0.4), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
 }
-.btn-6 span:before {
+.flex .btn-6 span:before {
   right: 0;
   top: 0;
   transition: all 500ms ease;
 }
-.btn-6 span:after {
+.flex .btn-6 span:after {
   left: 0;
   bottom: 0;
   transition: all 500ms ease;
 }
-.btn-6 span:hover:before {
+.flex .btn-6 span:hover:before {
   transition: all 500ms ease;
   height: 100%;
 }
-.btn-6 span:hover:after {
+.flex .btn-6 span:hover:after {
   transition: all 500ms ease;
   height: 100%;
 }
-.btn-6 span:before, .btn-6 span:after {
+.flex .btn-6 span:before, .flex .btn-6 span:after {
   position: absolute;
   content: "";
   box-shadow: -1px -1px 20px 0px rgb(255, 255, 255), -4px -4px 5px 0px rgb(255, 255, 255), 7px 7px 20px 0px rgba(0, 0, 0, 0.4), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
 }
-.btn-6 span:before {
+.flex .btn-6 span:before {
   left: 0;
   top: 0;
   width: 0%;
   height: 0.5px;
   transition: all 500ms ease;
 }
-.btn-6 span:after {
+.flex .btn-6 span:after {
   right: 0;
   bottom: 0;
   width: 0%;
   height: 0.5px;
   transition: all 500ms ease;
 }
-.btn-6 span:hover:before {
+.flex .btn-6 span:hover:before {
   width: 100%;
 }
-.btn-6 span:hover:after {
+.flex .btn-6 span:hover:after {
   width: 100%;
 }
-.btn-6:hover {
+.flex .btn-6:hover {
   background: transparent;
   color: #76aef1;
   box-shadow: none;
 }
-
-.btn-9 {
+.flex .btn-9 {
   border: none;
   transition: all 0.3s ease;
   overflow: hidden;
 }
-.btn-9:after {
+.flex .btn-9:after {
   position: absolute;
   content: " ";
   z-index: -1;
@@ -133,31 +116,29 @@ a.custom-btn {
   background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
   transition: all 0.3s ease;
 }
-.btn-9:hover {
+.flex .btn-9:hover {
   background: transparent;
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
   color: #fff;
 }
-.btn-9:hover:after {
-  -webkit-transform: scale(2) rotate(180deg);
+.flex .btn-9:hover:after {
   transform: scale(2) rotate(180deg);
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
 }
-
-.btn-3 {
+.flex .btn-3 {
   background: rgb(0, 172, 238);
   background: linear-gradient(0deg, rgb(0, 172, 238) 0%, rgb(2, 126, 251) 100%);
   line-height: 42px;
   padding: 0;
   border: none;
 }
-.btn-3 span {
+.flex .btn-3 span {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
 }
-.btn-3:before, .btn-3:after {
+.flex .btn-3:before, .flex .btn-3:after {
   position: absolute;
   content: "";
   right: 0;
@@ -165,29 +146,29 @@ a.custom-btn {
   background: rgb(2, 126, 251);
   transition: all 0.3s ease;
 }
-.btn-3:before {
+.flex .btn-3:before {
   height: 0%;
   width: 2px;
 }
-.btn-3:after {
+.flex .btn-3:after {
   width: 0%;
   height: 2px;
 }
-.btn-3:hover {
+.flex .btn-3:hover {
   background: transparent;
   box-shadow: none;
 }
-.btn-3:hover:before {
+.flex .btn-3:hover:before {
   height: 100%;
 }
-.btn-3:hover:after {
+.flex .btn-3:hover:after {
   width: 100%;
 }
-.btn-3 span:hover {
+.flex .btn-3 span:hover {
   color: rgb(2, 126, 251);
 }
-.btn-3 span:before,
-.btn-3 span:after {
+.flex .btn-3 span:before,
+.flex .btn-3 span:after {
   position: absolute;
   content: "";
   left: 0;
@@ -195,19 +176,156 @@ a.custom-btn {
   background: rgb(2, 126, 251);
   transition: all 0.3s ease;
 }
-.btn-3 span:before {
+.flex .btn-3 span:before {
   width: 2px;
   height: 0%;
 }
-.btn-3 span:after {
+.flex .btn-3 span:after {
   width: 0%;
   height: 2px;
 }
-.btn-3 span:hover:before {
+.flex .btn-3 span:hover:before {
   height: 100%;
 }
-.btn-3 span:hover:after {
+.flex .btn-3 span:hover:after {
   width: 100%;
 }
 
-/*# sourceMappingURL=main.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to right top, #c8f3ff, #d4f2ff, #e0f1ff, #e9f1fd, #f0f2f9, #eff0f9, #efeef9, #efebf9, #ede3fc, #eddbfe, #eed2ff, #f1c9ff);
+  min-height: 100svh;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  width: 100svw;
+  padding: 1% 2%;
+  background-color: rgba(255, 255, 255, 0.2588235294);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+}
+body header .title h1 {
+  color: #141414;
+}
+body header nav {
+  display: flex;
+  align-items: center;
+}
+body header nav ul {
+  display: flex;
+}
+body header nav ul li {
+  font-weight: 600;
+  margin: 0 25px;
+  list-style: none;
+}
+body header nav ul li a {
+  text-decoration: none;
+  color: #141414;
+}
+body section {
+  margin-top: 110px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+body .presentation article {
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 20px 25px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+body .presentation article h2 {
+  margin-bottom: 20px;
+}
+body .presentation article p {
+  margin: 7px 0;
+}
+body .projet {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+body .projet article {
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 20px 25px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+body .projet article img {
+  max-width: 250px;
+}
+body .projet article h3 {
+  margin: 10px 0;
+}
+body .projet article p {
+  margin: 10px 0;
+}
+body .projet article a {
+  color: black;
+}
+body .education article h2 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+body .education article table {
+  width: 100%;
+  table-layout: fixed;
+}
+body .education article table thead tr th {
+  color: #141414;
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+body .education article table tbody tr td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 12px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+  color: #141414;
+}
+body footer {
+  margin-top: 110px;
+  background-color: rgba(255, 255, 255, 0.2588235294);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  padding: 15px 5%;
+}
+body footer .block {
+  display: flex;
+  flex-direction: column;
+}
+body footer .block a {
+  text-decoration: none;
+  color: #141414;
+}
+body footer .cop {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+}
